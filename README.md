@@ -16,4 +16,4 @@ Welcome to my Python journey through the world of Data Science and Machine Learn
 ## 📊 Featured Projects
 #### Data Visualization: Creating compelling visualizations to communicate data-driven insights.
 
-## Feel free to explore, use this repository. Let's connect and grow together in the field of Data Science and Machine Learning!
+#### Feel free to explore, use this repository. Let's connect and grow together in the field of Data Science and Machine Learning!
