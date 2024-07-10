@@ -12,7 +12,7 @@ def index():
 def register():
     return render_template("register.html")
 
-@app.route("/perform_registration", methods=['post'])
+@app.route("/perform_registration", methods=['POST'])
 def perfomance_registration():
     name = request.form.get("user_name")
     email = request.form.get("user_email")
@@ -21,7 +21,7 @@ def perfomance_registration():
     if(response==1):
         return "Registration Successful"
     else:
-        return "User Already Successful"
+        return "User Already Registered"
      
 
 
