@@ -1,3 +1,4 @@
+# to show the table and then allow the user to select the database and show it's tables
 import pymysql
 mydb = pymysql.connect(
     host = "<yourhostname>",
