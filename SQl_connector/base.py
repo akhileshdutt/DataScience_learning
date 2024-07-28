@@ -1,9 +1,9 @@
 import pymysql
 import pandas as pd
 mydb = pymysql.connect(
-    host="local host",
+    host="<host name>",
     user="root",
-    password="password"
+    password="<your password>"
 )
 
 mycursor = mydb.cursor()
