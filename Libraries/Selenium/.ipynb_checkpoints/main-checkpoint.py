@@ -9,8 +9,8 @@ import time
 # options = webdriver.ChromeOptions()
 # options.add_argument('--ignore-certificate-errors')
 # options.add_argument('--proxy-server=http://your.proxy:port')
-service = Service(executable_path="C:/Users/hp/Downloads/chrome-win64/chrome-win64/chrome.exe")
-driver = webdriver.Chrome()
+service = Service(executable_path="C:\\Users\\hp\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe")
+driver = webdriver.Chrome(service=service)
 
 driver.get("https://www.google.com/")
 WebDriverWait(driver,10).until(EC.presence_of_element_located((By.CLASS_NAME,"gLFyf"))) # if we donot find what we needed then just go ahead and crash the program
