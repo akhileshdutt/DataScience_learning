@@ -1,6 +1,7 @@
 # streamlit is a library based upon react and on backend it uses python
 import streamlit as st
 import pandas as pd
+import time
 st.title("Startup Dashboard")
 st.header("I am learning streamlit")
 st.subheader("I am loving it")
@@ -32,3 +33,36 @@ st.json({
 })
 st.image("image.png")
 # st.video()
+st.sidebar.title("sidebar title")
+col1 , col2 = st.columns(2)
+with col1:
+    st.image("image.png")
+with col2:
+    st.title("Hey")
+
+st.error("Login failed")
+
+st.success("Login succesful")
+
+st.info("this is info")
+
+st.warning("this is warning")
+
+bar  = st.progress(0)
+
+for i in range(1,101):
+    # time.sleep()
+    bar.progress(i)
+
+# input 
+
+email = st.text_input("enter email")
+print(email)
+
+date = st.date_input("Enter date")
+print(date)
+
+number = st.number_input("enter number")
+print(number)
+
+# buttons
