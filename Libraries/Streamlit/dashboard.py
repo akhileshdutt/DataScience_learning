@@ -26,7 +26,7 @@ df = pd.DataFrame({
 })
 st.dataframe(df)
 
-st.metric("Revenue","Rs 5L","-110%")
+st.metric("Revenue","Rs 5L","200%")
 st.json({
     "name":["Swaym","Swarup","barik"],
     "marks":[50,60,70]
@@ -51,7 +51,7 @@ st.warning("this is warning")
 bar  = st.progress(0)
 
 for i in range(1,101):
-    # time.sleep()
+    time.sleep(0.2)
     bar.progress(i)
 
 # input 
