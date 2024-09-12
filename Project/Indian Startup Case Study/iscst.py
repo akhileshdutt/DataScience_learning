@@ -13,7 +13,7 @@ df["Investors"] = df["Investors"].fillna("Undisclosed")
 def load_investor_details(selected_investor):
     st.title(selected_investor)
     # last 5 round of investments done by the investor
-    last5_rounds= df[df["Investors"].str.contains(selected_investor)].head()[["Date","Startup","Vertical","City","Round","Amount"]]
+    last5_rounds= df[df["Investors"].str.contains(selected_investor)].head()[["Date","Startup","Vertical","SubVertical","City","Round","Amount"]]
     st.subheader("Most Recent Investments")
     st.dataframe(last5_rounds)
     col1,col2 = st.columns(2)
@@ -46,7 +46,7 @@ def load_investor_details(selected_investor):
         # Create figure and axes with appropriate size
         fig1, ax1 = plt.subplots(figsize=(15, 16))  # Adjust figure size
         # Explode larger slices (optional)
-        explode = [0.1 if val == max(vertical_invested_in) else 0 for val in vertical_invested_in]
+        explode = [0.15 if val == max(vertical_invested_in) else 0 for val in vertical_invested_in]
         # Plot pie chart with larger font size for labels
         ax1.pie(vertical_invested_in, 
                 labels=vertical_invested_in.index, 
